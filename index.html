@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All Things I Try — a personal collection of thoughts, essays, discoveries and reflections.">
+  <title>All Things I Try</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --paper: #faf9f6;
+      --ink: #292820;
+      --muted: #858176;
+      --line: #e8e5dd;
+      --accent: #8b755b;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 48px, 900px);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .nav-links a:hover,
+    .article-link:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 110px 0 100px;
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(48px, 8vw, 82px);
+      line-height: 1.12;
+      font-weight: 400;
+      letter-spacing: -2.5px;
+      margin-bottom: 28px;
+    }
+
+    .hero-description {
+      max-width: 570px;
+      color: #706d63;
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .divider {
+      width: 55px;
+      height: 1px;
+      background: var(--accent);
+      margin-top: 42px;
+    }
+
+    section {
+      padding: 65px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 35px;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 400;
+    }
+
+    .section-note {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .empty-state {
+      padding: 45px 0 55px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .empty-state p {
+      font-family: var(--serif);
+      font-size: 23px;
+      color: #777266;
+      margin-bottom: 8px;
+    }
+
+    .empty-state span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .about-content {
+      max-width: 620px;
+      color: #706d63;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .about-content p + p {
+      margin-top: 16px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 30px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(100% - 36px, 900px);
+      }
+
+      header {
+        padding: 22px 0;
+      }
+
+      .brand {
+        font-size: 18px;
+      }
+
+      .nav-links {
+        gap: 15px;
+        font-size: 10px;
+      }
+
+      .hero {
+        padding: 80px 0 75px;
+      }
+
+      h1 {
+        letter-spacing: -1.5px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+
+      .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="brand">All Things I Try.</a>
+        <div class="nav-links">
+          <a href="#writing">Writing</a>
+          <a href="#about">About</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="hero">
+        <div class="eyebrow">A personal collection of thoughts & ideas</div>
+
+        <h1>All Things<br>I Try.</h1>
+
+        <p class="hero-description">
+          A little space on the internet to explore ideas, document
+          discoveries, share reflections, and write about the many
+          things that make life interesting.
+        </p>
+
+        <div class="divider"></div>
+      </div>
+
+      <section id="writing">
+        <div class="section-heading">
+          <h2>Words & Thoughts</h2>
+          <span class="section-note">The writing journal</span>
+        </div>
+
+        <div class="empty-state">
+          <p>Every story begins somewhere.</p>
+          <span>New writings will find their home here soon.</span>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-heading">
+          <h2>A little about this space</h2>
+        </div>
+
+        <div class="about-content">
+          <p>
+            All Things I Try is a personal space for curiosity,
+            experimentation, learning and expression.
+          </p>
+
+          <p>
+            Some thoughts may turn into essays, some into observations,
+            and others may simply remain notes along the way.
+            There is no particular formula here — just the freedom
+            to explore, try, learn and share.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 All Things I Try</span>
+      <span>Made with curiosity and a little bit of writing.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
