@@ -8,4 +8,4 @@ experiments, and things I discover along the way.
 ## Explore
 
 - [Explore my projects](/projects/)
-- [About me](/about/)
+- [About me](/about.md)
