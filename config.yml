@@ -1,0 +1,11 @@
+
+title: All Things I Try
+description: A collection of things I learn, build, and write.
+theme: minima
+
+header_pages:
+  - writing.md
+  - projects/index.md
+  - about.md
+
+markdown: kramdown
