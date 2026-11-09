@@ -1,5 +1,3 @@
-
-
 # All Things I Try
 
 A space for learning, building, exploring, and sharing.
