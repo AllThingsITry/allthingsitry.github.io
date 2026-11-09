@@ -1,10 +1,4 @@
 
----
-layout: page
-title: Projects
-permalink: /projects/
----
-
 # Projects
 
 A collection of things I've built and explored.
