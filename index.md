@@ -7,6 +7,5 @@ experiments, and things I discover along the way.
 
 ## Explore
 
-- [Read my writing](/writing/)
 - [Explore my projects](/projects/)
 - [About me](/about/)
