@@ -1,8 +1,4 @@
 
----
-layout: home
-title: Home
----
 
 # All Things I Try
 
